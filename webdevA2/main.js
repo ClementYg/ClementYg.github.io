@@ -889,6 +889,8 @@ setTimeout(function () {
     var gameScore = 0;
     var countdownID = null;
 
+    const BGMusic = new Audio("audio01.mp3");
+
     // offseting
     var dotMargin = 25; //rough amount so that it wont touch 
 
@@ -1014,6 +1016,7 @@ setTimeout(function () {
     }
     function startTimer() {
         timeLeft = 300;
+        BGMusic.play();
         document.getElementById("timerDisplay").innerHTML = `Time: ${timeLeft}s left`;
 
         countdownID = setInterval(function () {
