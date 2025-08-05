@@ -31,7 +31,7 @@ const intro = document.querySelector("#intro");
 //lets intro slide up after 2.5s
 setTimeout(function () {
     intro.style.top = "-100vh";
-}, 0);
+}, 2500);
  // set to 2500 after finished
 /* hide/show pages */
 
@@ -107,7 +107,7 @@ setTimeout(function () {
 
     const isDesktop = window.innerWidth >= 800;
     {
-        ball[0].addEventListener("click", function () { //CHANGE THIS TO TOGGLE CLASS LATER ON
+        ball[0].addEventListener("click", function () { 
             if (Meso2000BCE.style.display == "none") { //Comparison, checks like a boolean. True/False MAYBE CHANGE TO TOGGLE 
 
                 Meso2000BCE.style.display = "block";
