@@ -313,7 +313,7 @@ footer section label span {
         height:3vw;
         cursor: pointer;
     }
-}
+
 
     
 #meso2000BCE {
@@ -379,13 +379,13 @@ footer section label span {
 }
 #combi7CE {
    top: 33%;
-  left: 39vw;
+  left: 17vw;
   width: 37%;
 
 }
 #combi8CE {
     top: 47%;
-  left: 45vw;
+  left: 28vw;
   width: 25%;
 }
 
@@ -397,6 +397,7 @@ top: 59%;
     top: 77%;
     left: 11vw;
     width: 76%;
+}
 }
 
 #page1 footer section label, #page1 footer h3 {
