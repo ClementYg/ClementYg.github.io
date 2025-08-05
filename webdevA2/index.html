@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable = no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Add ICO FILE-->
+    <title>Astrology</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="main.js" defer></script>
+</head>
+
+<body id="flexBody">
+    <div id="intro">
+        <h1>
+            Astrology
+        </h1>
+    </div>
+
+    <header id="mainHead">
+        <h1>___</h1>
+        <section>
+            <img src="frame.png" alt="MobileView" title="QR Code" id="QRCode">
+            <div id="baseText">
+                <h3> Astrology</h3>
+                <h4> <mark>"Sky and earth together produce omens Each separate, not divided; sky and earth are
+                        interconnected.
+                        A sign which is bad in the sky is bad on earth; a sign which is bad on earth is bad in the sky"
+                    </mark>
+                    translated by Francesca Rochberg, a historian specialised in ancient Mesopotamian.</h4>
+            </div>
+        </section>
+        <nav id="mainNav"> <!--menu system-->
+            <button id="navMenu"> Open Menu </button>
+            <ul>
+                <li><button id="page1btn"> History </button></li>
+                <li><button id="page2btn">The Zodiacs</button></li>
+                <li><button id="page3btn"> What is Astrology?</button></li>
+                <li><button id="page4btn"> Mini-Game </button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="pagecontainer">
+        <!-- REMEMBER TO ADD MARKINGS/COLOURISE IT BEFORE HANDING IN PLEASE-->
+        <div class="page" id="page1">
+            <div id="p1flex">
+                <div id="histcontainer">
+                    <div>
+                        <div class="ball mesopotamia" id="b1" data-top="10%" data-left="1%"> Mesopotamia </div>
+                        <!-- data-* attribute stores custom data that JS receives and uses for positioning-->
+                        <div id="meso2000BCE" class="mesoPara">
+                            <p> Celestial Omens were recorded as conditional statements (if __ in the sky moved,
+                                something
+                                in
+                                earth changed) </p>
+                        </div>
+                        <div class="ball mesopotamia" id="b2" data-top="25%" data-left="75%"> 750 BCE </div>
+                        <div id="meso750BCE" class="mesoPara">
+                            <p> Astrology was state-supported and reports would be sent to the king by scholars.
+                                This was called Mundane Astrology as astrological omens were taken to indicate things
+                                about
+                                cities, nations and large groups of people. </p>
+                        </div>
+                        <div class="ball mesopotamia" id="b3" data-top="55%" data-left="70%"> 5th Century BCE </div>
+                        <div id="meso5thBCE" class="mesoPara">
+                            <p>Zodiac standardised with 12 signs of 30 degrees each
+                                Ephemerides produced to study movements of planets using advanced mathematical
+                                astronomy.
+                                At this point, astronomy and astrology was interconnected as there was no real
+                                difference
+                                between the two subjects yet
+
+                                Mesopotamia was conquered, decentralising astrology</p>
+                        </div>
+                        <div class="ball mesopotamia" id="b4" data-top="90%" data-left="5%"> 410 BCE </div>
+                        <div id="meso410BCE" class="mesoPara">
+                            <p>
+                                <mark>Natal Astrology</mark> was introduced where birth charts started being used, based
+                                on
+                                planet's
+                                placement when ~~ was born, under premise
+                                that this affects their quality of life and future
+
+                                Birth charts contain raw data which calculates where the positions of the planets were
+                                when
+                                the
+                                person was born, but it does not actually tell you much.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ball egypt" id="eb1" data-top="15%" data-left="-42%"> Egypt </div>
+                        <div id="egypt2000BCE" class="egyptPara">
+                            <p>Decans were developed as a tool for telling time and timing religious rituals.
+                                Mesopotamians were primarily focused on the movement of the ecliptic, which is
+                                essentially
+                                the
+                                zodiac, the Egyptians were more focused on what we call the diurnal rotation, the
+                                spinning
+                                of
+                                the Earth and the day cycle.
+                            </p>
+                        </div>
+                        <div class="ball egypt" id="eb2" data-top="69%" data-left="-42%"> 2nd Century BCE </div>
+                        <div id="egypt2ndBCE" class="egyptPara">
+                            <p>
+                                Similar to Birth Charts, the Egyptians focused on the rising decan and where each decan
+                                fell
+                                relative to it at the moment of birth. They associated a topic to each decan, i.e 28th
+                                decan
+                                was
+                                associated with livelihood
+
+                                The decans were speculated to be the concept of the 12 houses, which associated the
+                                signs of
+                                the
+                                zodiac with topics relative to the rising decan.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ball combined" id="cb1" data-top="5%" data-left="-80%"> Unification </div>
+                        <div id="combi300BCE" class="combiPara">
+                            <p>
+                                Summarising the conquests of Alexander the Great, <mark>Mesopotamia and Egypt were now
+                                    under
+                                    the
+                                    control of Greek-rulers, </mark> Greek then became the lingua franco, allowing the
+                                unification of
+                                Egyptians and Mesopotamians.
+
+                                <mark>Zodiac and Egyptian decans start being merged in respective temples.</mark>
+                            </p>
+                        </div>
+                        <div class="ball combined" id="cb2" data-top="25%" data-left="-1%"> 100 BCE </div>
+                        <div id="combi100BCE" class="combiPara">
+                            <p>
+                                Hellenistic astrology emerged after the conquests of Alexander coming from Egypt.
+
+                                This astrology system represents the establishment of the 'fourfold' system that we use
+                                in
+                                modern-day, as well as the synthesis of Mesopotamian and Egyptian astrological
+                                traditions.
+                                - The planets and most things we associate with them
+                                - the signs of the zodiac and qualities we associate with them
+                                - the concept of 12 houses and their basic meanings
+                                - the concept of aspects,
+
+                                The Hellenistic astrology system represents two frameworks being merged
+                                - The movement of the planets along the ecliptic
+                                - the 24-hour cycle of the movement of the planets in the diurnal rotation
+
+                                Egyptian decans were now overlaid on top of zodiac, where it became 36 10-degree
+                                subdivisions of
+                                the signs of zodiacs, with 3 decans in each sign.
+
+                                The rising zodiacal sign came from the rising decan at the moment of birth and treating
+                                that
+                                as
+                                important and numbering them based of the subdivisions
+
+                                The rising zodiacal sign was then attributed to represent the 1st house of the native,
+                                and
+                                the
+                                rest of the signs were numbered orderly based after the 1st house. This is the whole
+                                sign
+                                house system
+                            </p>
+                        </div>
+                        <div class="ball combined" id="cb3" data-top="35%" data-left="-62%"> 1st Century </div>
+                        <div id="combi1CE" class="combiPara">
+                            <p>
+                                Roman Empire takes over Egypt and reaches its peak by 2nd century CE, where Hellenistic
+                                astrology also seems to the at its peak.
+                            </p>
+                        </div>
+                        <div class="ball combined" id="cb4" data-top="40%" data-left="-70%"> 2nd Century </div>
+                        <div id="combi2CE" class="combiPara">
+                            <p>
+                                Hellenistic astrology is transmitted to India, merging with preexisting astrology in
+                                India
+                                including the lunar zodiac nakshatras, starting a tradition of astrology there over the
+                                next
+                                2000 years.
+                            </p>
+                        </div>
+                        <div class="ball combined" id="cb5" data-top="50%" data-left="-8%"> 7th Century </div>
+                        <div id="combi7CE" class="combiPara">
+                            <p>
+                                Western Roman Empire fell and Astrology stops being practiced in Western Europe as much,
+                                with
+                                general decrease in learning and increased hostility towards astrology from
+                                Christianity.
+
+                                Hellenistic Astrology had stopped in general due to other advents and events occurring
+                                in
+                                the
+                                world.
+
+                                More importantly, the [[Horary Astrology]] became relevant and established as part of
+                                the
+                                tradition.
+
+                                Electional Astrology is founded based of the moment of time a question is asked, for
+                                important
+                                events or personal questions such as the best date for marriage
+
+                                Four traditional Branches of Astrology
+                                - Mundane Astrology
+                                - Natal Astrology
+                                - Electional Astrology
+                                - Horary Astrology
+                            </p>
+                        </div>
+                        <div class="ball combined" id="cb6" data-top="65%" data-left="-75%"> 8 - 12th Century </div>
+                        <div id="combi8CE" class="combiPara">
+                            <p>
+                                European kingdoms took land back from Islamic rulers, translating ancient texts and
+                                reviving
+                                the
+                                practice of astrology since its death during the Roman Empire
+
+                                Astrology, especially electional and horary, was now being used for stuff such as
+                                medicine,
+                                time
+                                of illness and health.
+                            </p>
+                        </div>
+                        <div class="ball combined" id="cb7" data-top="73%" data-left="-27%"> 17th Century </div>
+                        <div id="combi17CE" class="combiPara">
+                            <p>
+                                The Astrological Recession -- Astrology declines in the West due to social, scientific
+                                and
+                                religious changes
+                            </p>
+                        </div>
+                        <div class="ball combined" id="cb8" data-top="80%" data-left="-81%"> 20th Century </div>
+                        <div id="combi20CE" class="combiPara">
+                            <p>
+                                Rebirth of astrology, attributed to another change in culture where spiritualism and the
+                                Theosophical Society grew. People were more accepting and found it fashionable to talk
+                                about
+                                karma, reincarnation and things alike, leading to renewed public interest
+
+                                A lot of astrology's popularisation can be contributed by Alan Leo, who made sure it was
+                                easier
+                                to access and understand.
+
+                                Astrology being more about prediction in traditional astrology to more about character
+                                analysis.
+                                After the birth of depth psychology in the 20th century, it eventually centered around
+                                psychological analysis and introspection.
+
+                                1930s onwards, Sun-sign astrology was popularised and astrological columns focused on
+                                the
+                                zodiac
+                                was published in newspapers and magazines
+
+                                Generally, shift in 20th century as its more on deep psychology and character depth as
+                                opposed
+                                to predictive fatality or life. More innovation > tradition
+
+                                Outer planets were found, thus integrated to replacing the more general placements
+                                traditionally. I.e, Uranus replaced Saturn as the ruler of Aquarius
+
+                                Increased accessibility due to computers and easy calculation without prior knowledge
+
+                                Techniques were rediscovered, using whole sign houses and sect to propose a
+                                redevelopment of
+                                traditional key ideas of astrology. Going back into ancient texts, techniques may give
+                                us
+                                greater insight on development and innovation of astrology.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- CONNECTOR LINES FOR IN BETWEEN -->
+                    <svg id="connector"> <!-- SVG makes a scalable vector graphic, draws 2d graphics, charts etc-->
+                        <line id="line1" class="timeLine"></line> <!-- LINE ITSELF IS POSITIONED USING JS-->
+                        <line id="line2" class="timeLine"></line>
+                        <line id="line3" class="timeLine"></line>
+                        <line id="line4" class="timeLine"></line> <!-- THIS, IS FOR EGYPT-->
+                        <line id="line5" class="timeLine"></line> <!-- STARTING HERE IS FOR UNIFICATION-->
+                        <line id="line6" class="timeLine"></line>
+                        <line id="line7" class="timeLine"></line>
+                        <line id="line8" class="timeLine"></line>
+                        <line id="line9" class="timeLine"></line>
+                        <line id="line10" class="timeLine"></line>
+                        <line id="line11" class="timeLine"></line>
+
+
+                    </svg>
+                </div>
+
+                <footer>
+                    <h2>Astrology History Quiz </h2>
+                    <button id="startBtn"> Start Quiz? </button>
+                    <section>
+                        <h3>Q1: Who was the first to assign meaning to the planets and stars?</h3>
+                        <label>
+                            <input type="radio" name="q1" value="a">
+                            <span>Egyptions</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="b">
+                            <span>Mesopotamians. </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="c">
+                            <span>Greeks.</span> 
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="d">
+                            <span>Romans.</span> 
+                        </label>
+                    </section>
+                    <button id="nextBtn"> Next </button>
+                    <button id="resetBtn">Reset Quiz</button>
+                    <div id="quizscoreDisplay">
+                        <h3> Your Score is </h3>
+                        <p></p>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+        <div class="page" id="page2"> <!-- ZODIAC PAGE -->
+            <nav>
+                <ul id="zodiacList">
+                    <li class="zodiacSprite" id="Aries"></li>
+                    <li class="zodiacSprite" id="Taurus"></li>
+                    <li class="zodiacSprite" id="Gemini"></li>
+                    <li class="zodiacSprite" id="Cancer"></li>
+                    <li class="zodiacSprite" id="Leo"></li>
+                    <li class="zodiacSprite" id="Virgo"></li>
+                    <li class="zodiacSprite" id="Libra"></li>
+                    <li class="zodiacSprite" id="Scorpio"></li>
+                    <li class="zodiacSprite" id="Sagittarius"></li>
+                    <li class="zodiacSprite" id="Capricorn"></li>
+                    <li class="zodiacSprite" id="Aquarius"></li>
+                    <li class="zodiacSprite" id="Pisces"></li>
+                </ul>
+            </nav>
+            <div id="p2flex">
+                <img id="zodiacWheel" src="ZodiacWheel.jpg" alt="Zodiacs" title="12Zodiacs">
+                <div>
+                    <section>
+                        <h2> Aries</h2>
+                        <p> Commonly associated with the Ram, Aries is the first zodiac sign, a positive Cardinal Fire
+                            sign
+                            opposing Libra, with the ruling planet Mars. Aries' traits are initiation and independence.
+                            Being a cardinal sign, Aries is quick to take off but struggles to maintain speed. </p>
+                    </section>
+                    <section>
+                        <h2> Taurus</h2>
+                        <p>
+                            Commonly associated with the Bull, Taurus is the second zodiac sign, a negative Fixed Earth
+                            sign
+                            opposing Scorpio, with the ruling planet Venus. Taurus' traits are permanence and
+                            sensuality.
+                            Being ruled by Venus, Taurus likes investing in things that have substance.
+                        </p>
+                    </section>
+                    <section>
+                        <h2> Gemini </h2>
+                        <p>Commonly associated with the Twins, Gemini is the third zodiac sign, a positive Mutable Air
+                            Sign
+                            opposing Sagittarius, with the ruling planet Mercury. Gemini's traits are stimulation and
+                            adaptability. Gemini wants to do everything and has a detail-oriented nature, however prone
+                            to
+                            instability. </p>
+                    </section>
+                    <section>
+                        <h2> Cancer</h2>
+                        <p>Commonly associated with the Crab, Cancer is the fourth zodiac sign, a negative Cardinal
+                            Water
+                            sign opposing Capricorn, with the ruling planet Moon. Cancer's traits are cultivation and
+                            protection. Tuned to the moon cycles, Cancer is prone to fluctuation and may manipulate
+                            emotions
+                            when unsafe.</p>
+                    </section>
+                    <section>
+                        <h2> Leo </h2>
+                        <p>Commonly associated with the Lion and fire, Leo is the fifth zodiac sign. Leo is a positive
+                            Fixed
+                            Fire sign opposing Aquarius, with the ruling planet Sun. Leo's traits are creativity and
+                            regality. Being symbolised by the Lion, it expresses courage and tries maintaining a
+                            consistent
+                            image. </p>
+                    </section>
+                    <section>
+                        <h2> Virgo</h2>
+                        <p>Commonly associated with the Maiden, Virgo is the sixth zodiac sign. Virgo is a negative
+                            Mutable
+                            Earth sign opposing Pisces, with the ruling planet Mercury. Virgo's traits are
+                            detail-oriented
+                            and critical. However so, it may struggle with seeing the bigger picture and aim towards
+                            their
+                            definition of "purity".</p>
+                    </section>
+                    <section>
+                        <h2> Libra</h2>
+                        <p>Commonly associated with the Scales, Libra is the seventh zodiac sign. Libra is a positive
+                            Cardinal Air sign with the opposing planet opposing Aries, with the ruling planet Venus.
+                            Libra's
+                            traits are harmony and justice. Being symbolized by the scales, it aims to bring
+                            environments
+                            into stability. However, Libra may struggle with being decisive and not settling on a idea.
+                        </p>
+                    </section>
+                    <section>
+                        <h2> Scorpio</h2>
+                        <p>Commonly associated with the Scorpion, Scorpio is the eighth zodiac sign. Scorpio is a
+                            negative
+                            Fixed Water Sign opposing Taurus, with the ruling planet Mars. Scorpio's traits are depth
+                            and
+                            resilience. Being symbolized by the scorpion, it is both armored and armed, capable of
+                            standing
+                            on the offensive and the defensive. Scorpio may also hold secrets of its own, often left
+                            unable
+                            to express the full scope of what it feels. </p>
+                    </section>
+                    <section>
+                        <h2> Sagittarius </h2>
+                        <p>Commonly associated with the Archer, Sagittarius is the ninth zodiac sign.
+                            Sagittarius is
+                            a positive Mutable Fire sign opposing Gemini, with the ruling planet Jupiter.
+                            Sagittarius' traits are inspiration and inclusion. Sagittarius is defined by big
+                            picture
+                            thinking and free-spirited, holding onto non-proven truths. However, it may struggle
+                            to
+                            commit to things. </p>
+                    </section>
+                    <section>
+                        <h2> Capricorn </h2>
+                        <p> Commonly associated with the Sea Goat, Capricorn is the tenth zodiac sign. Capricorn is a
+                            negative Cardinal Earth sign opposing Cancer, with the ruling planet Saturn. Capricorn's
+                            traits
+                            are responsibility and business-like conduct. The Saturnian nature of Capricorn makes it
+                            separate itself from others. Its focus on tradition can narrow the lens, making it incapable
+                            of
+                            seeing how things could improve through change.</p>
+                    </section>
+                    <section>
+                        <h2> Aquarius</h2>
+                        <p>Commonly associated with the Water-Bearer, Aquarius is the eleventh sign. Aquarius is a
+                            positive
+                            Fixed Air sign, with the ruling planet Saturn. Aquarius is known for intelligence and
+                            innovation. Symbolised by the water bearer, Aquarius seeks to control the collective
+                            direction
+                            and may be rigid in its desire for change.
+
+                            In modern astrology, Aquarius is ruled by Uranus, giving Aquarius dual rulership and a blend
+                            of
+                            traits.</p>
+                    </section>
+                    <section>
+                        <h2> Pisces</h2>
+                        <p>Commonly associated with Two Fish, Pisces is the twelfth zodiac sign. Pisces is a negative
+                            Mutable Water sign, with the ruling planet Jupiter. Pisces' traits are expansion and
+                            idealism.
+                            Pisces sits in an endless expanse of cohesion and inclusion and aims to connect everyone as
+                            symbolised by the fish. Pisces is also intuitive, and willing to sacrifice in the name of
+                            greater good. </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <article id="mainAstrology">
+                <h2>
+                    Astrology is a pseudoscience, studying movements and positions of celestial bodies' impact on the
+                    natural world.
+                </h2>
+                <p>
+                    Astrology has not demonstrated its effectiveness in controlled studies and has no scientific
+                    validity
+                    <br>
+                    Astrology has a range of divinatory practices.
+                    <br>
+                    It's origin came from ancient Mesopotamia, aka modern-day Iraq about 4000 years ago. 2000 BCE, the
+                    premise of astrology was formed.
+                </p>
+            </article>
+            <div id="p3flex">
+                <section class="infoSect">
+                    <h3> Elements </h3>
+                    <p class="infoPara">Fire Water Earth Air
+
+                        Each of the element is associated with 3 zodiac signs, located 3 decans away from each other
+
+                        The elements come from the concept of classical elements from ancient Greek used to understand
+                        the
+                        behaviours and meanings associated with the zodiac signs</p>
+                </section>
+                <section class="infoSect">
+                    <h3> Polarity </h3>
+                    <p class="infoPara">It is just a shortcut way to explain how some of the signs characteristics
+                        express themselves.
+                        Nothing more, nothing less (no, positive signs are not automatically "good", nor are negative
+                        signs
+                        automatically "bad").
+
+                        Every sign has a polarity. Sometimes called positive/negative, masculine/feminine, or other
+                        variations of the same thing (yin/yang, so on).
+
+                        In general, positive signs are more outgoing, expressive, forceful, and proactive, while
+                        negative
+                        signs are generally more introspective, slightly reserved, perhaps, and reactive, or passive.
+                    </p>
+                </section>
+                <section class="infoSect">
+                    <h3> Modality </h3>
+                    <p class="infoPara"> Modalities are qualities or modes of expression. as the tropical zodiac is tied
+                        to the seasons, each
+                        zodiac sign is associated with its seasonal stage
+
+                        CARDINAL signs “initiate” - they are enterprising, action-oriented, & begin each season. Aries,
+                        Cancer, Libra, Capricorn. Cardinal energy can sometimes struggle with the follow-through.
+
+                        FIXED signs “maintain” - they are stabilizing, persistent, & sustain the season. Taurus, Leo,
+                        Scorpio, Aquarius. Fixed signs can be stubborn & set in their ways.
+
+                        MUTABLE signs “adapt” - they are versatile, flexible, & end the season. Gemini, Virgo,
+                        Sagittarius,
+                        Pisces. Mutable signs can be restless & inconsistent, or feel guilty for doing all the things.
+
+                        More can be read from the beginner book by Carole Taylor, "Astrology: Using the Wisdom of the
+                        Stars
+                        in Your Everyday Life":</p>
+                </section>
+            </div>
+        </div>
+        <div class="page" id="page4">
+            <h2> Minigame Area</h2>
+            <div id="timerDisplay"> </div>
+            <div id="scoreDisplay"> </div>
+            <div id="gameArea">
+                <button id="gameStart"> Start </button>
+                <button id="resetLines"> Reset Lines </button>
+                <button id="fullscreenBtn">Go Fullscreen</button>
+                <button id="exitFS"> Exit Fullscreen</button>
+                <div id="gameoverMsg"></div>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
