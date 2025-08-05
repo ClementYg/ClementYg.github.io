@@ -728,6 +728,7 @@ footer section label input[type="radio"]:checked::after {
     transition: all 0.5s ease;
     overflow: hidden;
     padding: 0 1rem;
+    background: #46587a;
 }
 
 #page3 .infoPara.active {
@@ -770,7 +771,6 @@ footer section label input[type="radio"]:checked::after {
 
     .infoPara {
         text-align: left;
-        background: #46587a;
     }
 }
 
